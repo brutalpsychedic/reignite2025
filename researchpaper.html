@@ -161,9 +161,27 @@
       <p>This segment lays the foundation for all research shared during Reignite. Accepted papers may be featured or published in future compilations.</p>
     </section>
 
-    <section class="register-section" id="register">
-      <a href="https://forms.gle/epuTUsKyfz8Dn27H6" target="_blank" class="register-btn">Register Now</a>
-    </section>
+	<form id="registerForm">
+  		<input type="text" name="name" placeholder="Name" required />
+  		<input type="email" name="email" placeholder="Email" required />
+  		<button type="submit">Register</button>
+	</form>
+	<p id="responseMsg"></p>
+	<script>
+  		document.getElementById("registerForm").addEventListener("submit", async (e) => {
+    		e.preventDefault();
+    		const formData = new FormData(e.target);
+    		const payload = Object.fromEntries(formData.entries());
+		const res = await fetch("/.netlify/functions/register", {
+      		method: "POST",
+      		body: JSON.stringify(payload),
+    		});
+
+	    const msg = await res.text();
+	    document.getElementById("responseMsg").textContent = msg;
+  	});
+	</script>
+
 	<nav>
       <a href="index.html">Back to Home</a>
     </nav>
