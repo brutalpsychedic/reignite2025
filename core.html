@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Core Segments - Reignite</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #ECF0F1;
+      color: #2C3E50;
+    }
+
+    header {
+      background-color: #2C3E50;
+      padding: 20px 0;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 24px;
+      border-bottom: 3px solid #E74C3C;
+      display: inline-block;
+      padding-bottom: 6px;
+    }
+
+    .btn-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 24px;
+    }
+
+    .btn-link {
+      background-color: #2C3E50;
+      color: white;
+      text-decoration: none;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 1.2rem;
+      font-family: 'Montserrat', sans-serif;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .btn-link:hover {
+      background-color: #E74C3C;
+      box-shadow: 0 6px 14px rgba(231,76,60,0.6);
+    }
+
+    footer {
+      background-color: #2C3E50;
+      color: #ECF0F1;
+      text-align: center;
+      padding: 24px 16px;
+      font-size: 0.95rem;
+      margin-top: 60px;
+    }
+    footer nav a {
+      color: #F1C40F;
+      margin: 0 14px;
+      font-weight: 600;
+    }
+    footer nav a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .btn-link {
+        font-size: 1rem;
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Core Segments</h1>
+  </header>
+
+  <main class="container">
+    <h2>Explore the Core</h2>
+    <p>The heart of Reignite lies in its core segments — designed to challenge, engage, and showcase your analytical, presentation, and academic research skills. Choose your path below:</p>
+    
+    <div class="btn-grid">
+      <a href="poster.html" class="btn-link" aria-label="Poster Presentation Segment">
+        📌 Poster Presentation
+      </a>
+      <a href="onstage.html" class="btn-link" aria-label="On-Stage Presentation Segment">
+        🎤 On-Stage Presentation
+      </a>
+      <a href="researchpaper.html" class="btn-link" aria-label="Research Paper Submission Segment">
+        📄 Research Paper Submission
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="contact.html">Contact</a> |
+      <a href="faq.html">FAQ</a> |
+      <a href="guidebook.html">Guidebook</a>
+    </nav>
+    <p style="margin-top: 12px;">© 2025 Reignite - BRAC University Research for Development Club</p>
+  </footer>
+
+</body>
+</html>

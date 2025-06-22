@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ReIgnite - BRAC University Research for Development Club</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #ECF0F1;
+      color: #2C3E50;
+      line-height: 1.6;
+    }
+    a {
+      color: #E74C3C;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header Dashboard (Navbar) */
+    .navbar {
+      background-color: #2C3E50;
+      padding: 10px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar h1 {
+      font-family: 'Montserrat', sans-serif;
+      color: #F1C40F;
+      font-size: 1.5rem;
+      margin: 0;
+    }
+    .navbar nav a {
+      margin-left: 20px;
+      font-weight: bold;
+      color: #ECF0F1;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+    .navbar nav a:hover {
+      color: #F1C40F;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px 48px 24px;
+    }
+
+    /* Banner */
+    header {
+      background: url('https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2164931723.jpg?q=w_1160,c_fill/f_webp') center/cover no-repeat;
+      height: 640px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 24px;
+    }
+    header h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3rem;
+      margin: 0;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+    header p {
+      font-size: 1.3rem;
+      max-width: 700px;
+      margin-top: 1rem;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+    }
+
+    /* Sections */
+    section {
+      margin-top: 48px;
+    }
+    section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 24px;
+      border-bottom: 3px solid #E74C3C;
+      display: inline-block;
+      padding-bottom: 6px;
+    }
+
+    /* Buttons grid */
+    .btn-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .btn-link {
+      background-color: #2C3E50;
+      color: white;
+      border: none;
+      padding: 16px 24px;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      box-shadow: 0 4px 8px rgba(44,62,80,0.3);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .btn-link:hover {
+      background-color: #E74C3C;
+      box-shadow: 0 6px 14px rgba(231,76,60,0.7);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2C3E50;
+      color: #ECF0F1;
+      text-align: center;
+      padding: 24px 16px;
+      font-size: 0.95rem;
+      margin-top: 60px;
+    }
+    footer nav a {
+      color: #F1C40F;
+      margin: 0 14px;
+      font-weight: 600;
+    }
+    footer nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      header h2 {
+        font-size: 2.2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .navbar nav a {
+        margin: 6px 0 0 0;
+        display: block;
+      }
+	.btn-large {
+		display: inline-block;
+		padding: 14px 28px;
+		font-size: 1.2rem;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: bold;
+		color: #ECF0F1;
+		background-color: #2C3E50;
+		border: none;
+		border-radius: 8px;
+		text-decoration: none;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+	}
+	.btn-large:hover {
+		background-color: #E67E22; /* Bold Orange */
+		color: #fff;
+	}
+
+}
+  
+	}
+  </style>
+</head>
+<body>
+
+  <!-- Header Dashboard -->
+  <div class="navbar">
+  <h1>ReIgnite</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="segments.html">Segments</a>
+    <a href="timeline.html">Timeline</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
+
+
+  <!-- Hero Banner -->
+  <header>
+    <h2>ReIgnite 2025</h2>
+    <p>Join the multidisciplinary research and innovation competition inspired by Bangladesh’s July 2024 uprising — shaping a democratic future through student creativity and collaboration.</p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+	<section style="text-align: center; margin-top: 60px;">
+		<a href="about.html" class="btn-large" aria-label="Learn what ReIgnite is all about">What’s ReIgnite?</a>
+	</section>
+  </main>
+
+
+    <section id="core-segments">
+      <h2>Core Segments</h2>
+      <div class="btn-grid">
+        <a href="poster.html" class="btn-link" aria-label="Poster Presentation Segment">Poster Presentation</a>
+        <a href="onstage.html" class="btn-link" aria-label="On-Stage Presentation Segment">On-Stage Pitch</a>
+        <a href="researchpaper.html" class="btn-link" aria-label="Research Paper Submission Segment">Research Paper Submission</a>
+      </div>
+    </section>
+
+    <section id="innovative-segments">
+      <h2>Innovative Segments</h2>
+      <div class="btn-grid">
+        <a href="memebattle.html" class="btn-link" aria-label="Meme Battle Segment">Meme Battle</a>
+        <a href="abstractwriting.html" class="btn-link" aria-label="Abstract Writing Competition Segment">Abstract Contest</a>
+        <a href="stagepodcast.html" class="btn-link" aria-label="Stage Podcast Competition Segment">Stage Podcast</a>
+        <a href="infographic.html" class="btn-link" aria-label="Research Art & Infographic Contest Segment">Infographic & Research Art</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <nav>
+      <a href="contact.html" aria-label="Contact Us Page">Contact Us</a> |
+      <a href="followus.html" aria-label="Follow Us Page">Follow Us</a> |
+      <a href="faq.html" aria-label="Frequently Asked Questions Page">FAQ</a> |
+      <a href="guidebook.html" aria-label="Guidelines Page">Guidebook</a>
+    </nav>
+    <p style="margin-top: 12px;">© 2025 Reignite - BRAC University Research for Development Club (BUReD)</p>
+  </footer>
+
+</body>
+</html>
